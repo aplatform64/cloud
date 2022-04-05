@@ -13,7 +13,11 @@
         gather_subset: "min"
         gather_timeout: "10"
 
-    - name: "Initialize Role with defaults"
+    - name: "Deploy required packages"
+      vars:
+        cloud_google_cli:
+          deploy: true
+        cloud_google_cli_application: "{{ test_cloud_google_cli_application_brew }}"
       ansible.builtin.include_role:
-        name: "cloud_ibm_cli"
+        name: "cloud_google_cli"
 ...
