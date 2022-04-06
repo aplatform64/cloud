@@ -1,13 +1,18 @@
 ---
 cloud_google_cli_base:
   run:
-    gcloud: "/usr/bin/gcloud"
+    distro:
+      gcloud: "/usr/bin/gcloud"
+    brew:
+      gcloud: "/home/linuxbrew/.linuxbrew/bin/gcloud"
 
 cloud_google_cli_profiles:
   distro:
     latest:
+      supported: true
       packages:
         - name: "google-cloud-sdk"
+  brew: {}
 
 cloud_google_cli_repository_custom_yum:
   - name: "google_cloud_sdk"

@@ -7,7 +7,7 @@
   ansible.builtin.include_tasks:
     file: "cloud_google_cli_deploy.yml"
   when:
-    - "'deploy' in cloud_google_cli"
+    - cloud_google_cli['deploy'] is defined
     - cloud_google_cli['deploy']
 
 - name: "Cloud / Google / Finalize"

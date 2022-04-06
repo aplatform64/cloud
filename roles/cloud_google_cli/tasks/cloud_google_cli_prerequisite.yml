@@ -10,6 +10,7 @@
       flatpak: "{{ cloud_google_cli_application['type'] == 'flatpak' }}"
       snap: "{{ cloud_google_cli_application['type'] == 'snap' }}"
       git: "{{ cloud_google_cli_application['type'] == 'git' }}"
+      brew: "{{ cloud_google_cli_application['type'] == 'brew' }}"
     sys_repository_catalog_distro: "{{ cloud_google_cli_repository_catalog_distro }}"
     sys_repository_catalog_yum: "{{ cloud_google_cli_repository_catalog_yum }}"
     sys_repository_catalog_apt: "{{ cloud_google_cli_repository_catalog_apt }}"
