@@ -1,0 +1,25 @@
+---
+cloud_google_cli_base:
+  run:
+    distro: {}
+    brew:
+      gcloud: "/opt/homebrew/bin/gcloud"
+
+cloud_google_cli_profiles:
+  distro: {}
+  brew:
+    latest:
+      supported: true
+      packages:
+        - name: "google-cloud-sdk"
+      options:
+        brew:
+          cask: true
+
+cloud_google_cli_repository_custom_yum: []
+cloud_google_cli_repository_custom_apt: []
+
+cloud_google_cli_repository_catalog_distro: {}
+cloud_google_cli_repository_catalog_yum: {}
+cloud_google_cli_repository_catalog_apt: {}
+...
