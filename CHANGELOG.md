@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- cloud_google_cli: set default pkg type to brew on MacOSX
+
 ## [1.1.0]
 
 ### Added
