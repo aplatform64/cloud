@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0]
+
+### Added
+
+- All: support for AlmaLinux8, RHEL8
+
 ### Fixed
 
 - cloud_google_cli: set default pkg type to brew on MacOSX
