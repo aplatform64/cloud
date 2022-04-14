@@ -1,6 +1,8 @@
 ---
 cloud_aws_realm_platforms:
   - "CentOS8"
+  - "RedHat8"
+  - "AlmaLinux8"
   - "OracleLinux8"
   - "Ubuntu20"
   - "Ubuntu21"
@@ -8,23 +10,6 @@ cloud_aws_realm_platforms:
   - "Fedora35"
   - "Debian10"
   - "Debian11"
-
-cloud_aws_realm_os_family: "
-  {%- if
-      ( ansible_distribution == 'CentOS' ) or
-      ( ansible_distribution == 'OracleLinux' ) or
-      ( ansible_distribution == 'Fedora' )
-  -%}
-    {{ 'RedHat' }}
-  {%- elif
-      ( ansible_distribution == 'Debian' ) or
-      ( ansible_distribution == 'Ubuntu' )
-  -%}
-    {{ 'Ubuntu' }}
-  {%- else -%}
-    {{ 'NotSupported' }}
-  {%- endif -%}
-  "
 
 cloud_aws_realm_structure_managers:
   iam_manager_auto:
