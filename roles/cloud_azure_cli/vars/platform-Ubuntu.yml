@@ -2,7 +2,7 @@
 cloud_azure_cli_repository_custom_yum: []
 cloud_azure_cli_repository_custom_apt:
   - name: "azure_cli"
-    suite: "focal"
+    suite: "{{ ansible_facts['distribution_release'] | default('focal') }}"
     component: "main"
     url: "https://packages.microsoft.com/repos/azure-cli"
     pgpkey: "https://packages.microsoft.com/keys/microsoft.asc"
