@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 
 - Obsolete role: cloud_aws_realm
+- cloud_aws_cli: obsolete action: prepare
 
 ## [1.3.0]
 
