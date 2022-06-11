@@ -5,6 +5,8 @@
       prepare: true
       deploy: true
       setup: true
+    sys_repository_managers:
+      brew: "{{ cloud_aws_cli_application['type'] == 'brew' }}"
   ansible.builtin.include_role:
     name: "serdigital64.system.sys_repository"
 
