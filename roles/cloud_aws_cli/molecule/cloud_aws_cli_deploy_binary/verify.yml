@@ -15,7 +15,7 @@
 
     - name: "Detect target path"
       ansible.builtin.stat:
-        path: "{{ cloud_aws_cli_base['run']['aws'] }}"
+        path: "{{ cloud_aws_cli_base['run']['binary']['aws'] }}"
       register: file_stat
 
     - name: "Verify app is installed"
