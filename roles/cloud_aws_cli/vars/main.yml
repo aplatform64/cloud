@@ -18,17 +18,14 @@ cloud_aws_cli_base:
     root: "/opt/aws"
     bin: "/opt/aws/bin"
     versions: "/opt/aws/versions"
-    etc: "{{ cloud_aws_cli_paths['etc'] | default(none) }}"
   run:
     aws: "/opt/aws/bin/aws"
     install: "aws/install"
   access:
     user:
       root: "root"
-      cloudadm: "{{ cloud_aws_cli_users['cloudadm']['name'] | default(omit) }}"
     group:
       root: "root"
-      cloudadm: "{{ cloud_aws_cli_users['cloudadm']['group'] | default(omit) }}"
     mode:
       dir: "0755"
       file: "0644"

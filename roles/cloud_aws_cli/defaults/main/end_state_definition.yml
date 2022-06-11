@@ -4,8 +4,4 @@ cloud_aws_cli_application:
   type: "binary"
   version: "latest"
   installed: true
-
-cloud_aws_cli_paths: {}
-
-cloud_aws_cli_users: {}
 ...
