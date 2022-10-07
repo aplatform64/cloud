@@ -1,7 +1,0 @@
----
-test_cloud_google_cli_application_brew:
-  name: "gcloud"
-  type: "brew"
-  version: "latest"
-  installed: true
-...
