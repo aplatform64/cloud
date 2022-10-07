@@ -14,7 +14,7 @@ cloud_foundry_cli_platforms:
   - "Debian10"
   - "Debian11"
 
-cloud_foundry_cli_os_family: "
+cloud_foundry_cli_os_family: |
   {%- if
       ( ansible_distribution == 'CentOS' ) or
       ( ansible_distribution == 'RedHat' ) or
