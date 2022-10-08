@@ -5,6 +5,7 @@ cloud_foundry_cli_platforms:
   - "AlmaLinux8"
   - "Rocky8"
   - "OracleLinux8"
+  - "OracleLinux9"
   - "Ubuntu20"
   - "Ubuntu21"
   - "Ubuntu22"
@@ -14,7 +15,7 @@ cloud_foundry_cli_platforms:
   - "Debian10"
   - "Debian11"
 
-cloud_foundry_cli_os_family: "
+cloud_foundry_cli_os_family: |
   {%- if
       ( ansible_distribution == 'CentOS' ) or
       ( ansible_distribution == 'RedHat' ) or
